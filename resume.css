@@ -1,0 +1,306 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #282828;
+}
+p {
+    font-weight: 300;
+    color: #3d3d3d;
+}
+a {
+   text-decoration: none;
+   color: #282828;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+.content-container {
+    margin: 0;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content-container .fa {
+    color: #01a093;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sidebar {
+    float: left;
+    max-width: 25%;
+    min-height; 100%;
+    margin-top: 10px;
+    text-align: left;
+    color: #3d3d3d;
+}
+.profile-image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.profile-image h1  {
+    margin-top: -50px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+}
+.profile-image span {
+    margin-top: -60px;
+    line-height: 1.2;
+    font-size: 1em;
+    color: #01a093;
+}
+.profile-about h4 {
+    margin-top: 20px;
+}
+.profile-about p {
+    margin-top: 10px;
+}
+.contact-me {
+    margin-top: 10px;
+}
+.contact-me h4 {
+    margin-top: 10px;
+}
+.contact-me a {
+    color: #3d3d3d;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.contact-me a:hover {
+    color: #01a093;
+    text-decoration: none;
+}
+.personal-skills {
+    margin-top: 10px;
+}
+.main {
+    float: right;
+    max-width: 75%;
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 0;
+
+}
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* секция с данными о работе */
+.sidebar, .work-experience, .proffesional-skills, .education {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+.job {
+    margin-bottom: 20px;
+    color: #3d3d3d;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.job:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+.job::after {
+    content: '';
+    display: table;
+    height: 0;
+    clear: both;
+} 
+.work {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+.work-experience h2 {
+    font-size: 1em;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.company h4 {
+    font-size: 1em;
+    line-height: 1.2;
+}
+.company .location {
+    font-size: 0.7em;
+}
+.time {
+    color: #3d3d3d;
+    margin-right: 10px;
+}
+.time span time {
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+.position {
+    float: left;
+    margin-left: 15px;
+}
+.position h5 {
+    font-size: 1em;
+    line-height: 1.2;
+    color: #282828;
+}
+.position p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #3d3d3d;
+}
+/* секция с навыками */
+.proffesional-skills {
+    border-bottom: rgba(0,0,0,0.3);
+}
+.proffesional-skills:after {
+    content: '';
+    display: table;
+    clear: both;
+
+}
+.proffesional-skills h2 {
+    font-size: 1em;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.professional-skills span {
+    display: block;
+    text-transform: uppercase;
+}
+.skills-wrapper {
+    float: left;
+    width: 49%;
+}
+.skill {
+    margin-bottom: 10px;
+}
+.skills-wrapper:last-child {
+    margin-left: 2%;
+    margin-bottom: 0;
+}
+.skill p {
+    margin-bottom: 3px;
+    color: #282828;
+}
+.skill-progress {
+    width: 100%;
+    background-color: #ddd;
+}
+.skill-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #01a093;
+}
+.skill-bar-photoshop {
+    width: 70%;
+}
+.skill-bar-illustrator {
+    width: 40%;
+}
+.skill-bar-indesign {
+    width: 60%;
+}
+.skill-bar-web {
+    width: 50%;
+}
+.skill-bar-git {
+    width: 80%;
+}
+.skill-bar-less {
+    width: 30%;
+}
+.label {
+    text-align: center;
+    line-height: 20px;
+    color: #ddd;
+}
+/* образование */ 
+.education:after {
+    content: '';
+    display: table;
+    clear: both;
+} 
+.education .school {
+    width: 49%;
+    float: left;
+    margin-right: 1%;
+}
+.education .languages {
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+}
+.school h2 {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #282828;
+}
+.school p {
+    margin-top: 10px;
+    color: #282828;
+}
+.school span {
+    color: #3d3d3d;
+    font-size: 0.7em;
+}
+.languages h2 {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #282828;
+}
+.lang {
+    display: inline-block;
+    margin-right: 10%;
+}
+.lang:last-child {
+    margin-right: 0;
+}
+.lang p {
+    color: #282828;
+    margin-top: 10px;
+}
+.lang span {
+    color: #3d3d3d;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+/* footer */
+footer {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer p {
+    float: left;
+    display: inline-block;
+}
+footer p>a {
+    color: #01a093;
+}
+.social {
+    float: right;
+}
+.social a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    color: #fff;
+    background-color: #3d3d3d;
+    border-radius: 10%;
+}
+.social a:hover {
+    background-color: #01a093;
+}
