@@ -1,18 +1,8 @@
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    color: #282828;
-}
-p {
-    font-weight: 300;
-    color: #3d3d3d;
-}
-a {
-   text-decoration: none;
-   color: #282828;
-}
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    font-weight: 300;
+    color: #070606;
+    background-color: #fff;
 }
 .wrapper {
     max-width: 1200px;
@@ -22,22 +12,59 @@ body {
 .content-container {
     margin: 0;
     padding: 0;
-    background-color: #dadada;
+    background-color: #fff;
+}
+.divider {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 30px solid #1c1818;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+}
+header span {
+    font-size: 2em;
+    font-weight: 300;
 }
 /* left */
 .sidebar {
     width: 25%;
-    min-height: 100%;
+    float: left;
     margin: 0;
-    padding: 2%;
-    color: #dadada;
-    background-color: #0e1d30;
-}
-.sidebar h1 {
     color: #dadada;
 }
-.sidebar p {
-    color: #dadada;
+.sidebar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sidebar img {
+    width: auto;
+    height: 250px;
+    background-color: #fff;
+}
+.profile-about {
+    margin-bottom: 10px;
+    background-color: #1c1818;
+}
+.profile-about h4 {
+    margin-bottom: 10px;
+}
+/* right */
+.main {
+    float: left;
+}
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /*
 .content-container {
