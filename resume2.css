@@ -4,6 +4,9 @@ body {
     color: #070606;
     background-color: #fff;
 }
+header {
+    margin-bottom: 30px;
+}
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,11 +17,17 @@ body {
     padding: 0;
     background-color: #fff;
 }
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .divider {
     width: 25%;
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
-    border-bottom: 30px solid #1c1818;
+    border-bottom: 50px solid #1c1818;
 }
 header h1 {
     margin: 0;
@@ -38,138 +47,73 @@ header span {
     width: 25%;
     float: left;
     margin: 0;
+    margin-right: 2%;
     color: #dadada;
 }
-.sidebar::after {
-    content: "";
-    display: table;
-    clear: both;
+.profile-image {
+    text-align: center;
 }
 .sidebar img {
-    width: auto;
-    height: 250px;
-    background-color: #fff;
+    width: 100%;
+    height: auto;
+    margin-bottom: -4px;;
 }
-.profile-about {
-    margin-bottom: 10px;
+.profile-wrapper {
+    padding: 5% 10%;
     background-color: #1c1818;
 }
-.profile-about h4 {
-    margin-bottom: 10px;
-}
-/* right */
-.main {
-    float: left;
-}
-.main::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*
-.content-container {
-    margin: 0;
-    padding: 0;
-    background-color: #dadada;
-}
-.wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.content-container .fa {
-    color: #01a093;
-}
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
-    */
-    /*
-}
-.sidebar {
-    float: left;
-    max-width: 25%;
-    min-height; 100%;
-    margin-top: 10px;
-    text-align: left;
-    color: #3d3d3d;
-}
-.profile-image img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
-.profile-image h1  {
-    margin-top: -50px;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #dadada;
-}
-.profile-image span {
-    margin-top: -60px;
-    line-height: 1.2;
-    font-size: 1em;
-    color: #01a093;
-}
-.profile-about h4 {
-    margin-top: 20px;
-}
-.profile-about p {
-    margin-top: 10px;
+.about-me, .contact-me {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+    background-color: #1c1818;
 }
 .contact-me {
-    margin-top: 10px;
+    border: none;
 }
-.contact-me h4 {
-    margin-top: 10px;
+.about-me h4, .contact-me h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
-.contact-me a {
+.about-me p, .contact-list {
+    margin-bottom: 30px;
+}
+.contact-list span {
+    display: block;
+    line-height: 2;
+    color: #aeaeae;
+}
+.contact-list li {
+    margin-bottom: 15px;
+}
+.contact-list a {
     color: #dadada;
     text-decoration: none;
-    padding: 5px 0;
 }
-.contact-me a:hover {
-    color: #01a093;
-    text-decoration: none;
+.contact-list a:hover {
+    border-bottom: 1px dotted #dadada;
 }
-.personal-skills {
-    margin-top: 10px;
+.contact-list a i {
+    margin-right: 10px;
 }
-.main {
-    float: right;
-    max-width: 75%;
-    margin-top: 10px;
-    margin-right: 0;
 
-}
-.main::after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 /* секция с данными о работе */
-/*
-.sidebar, .work-experience, .proffesional-skills, .education {
-    padding: 20px;
-    background-color: #dadada;
-}
-.sidebar {
-    height: auto;
-    background-color: #0e1d30;
-    color: #dadada;
-}
+
 .main {
-    color: #0e1d30;
-    background-color: #dadada;
+    float: left;
+    margin-left: 5%;
+    color: #1c1818;
 }
+
 .job {
     margin-bottom: 20px;
     color: #3d3d3d;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 .job:last-child {
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 .job::after {
     content: '';
@@ -180,15 +124,18 @@ header span {
 .work {
     width: 150px;
     float: left;
-    */
    /* margin-right: 20px; */
-    /*
     margin-top: 0px;
 }
-.work-experience h2 {
-    font-size: 1em;
-    color: #282828;
-    margin-bottom: 10px;
+.work-experience {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1c1818;
+}
+.work-experience > h4 {
+    font-size: 1.5em;
+    color: #1c1818;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .company h4 {
     font-size: 1em;
@@ -220,7 +167,6 @@ header span {
     color: #3d3d3d;
 }
 /* секция с навыками */
-/*
 .proffesional-skills {
     border-bottom: rgba(0,0,0,0.3);
 }
@@ -230,10 +176,11 @@ header span {
     clear: both;
 
 }
-.proffesional-skills h2 {
-    font-size: 1em;
-    color: #282828;
-    margin-bottom: 10px;
+.proffesional-skills h4 {
+    font-size: 1.5em;
+    color: #1c1818;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 .professional-skills span {
     display: block;
@@ -252,16 +199,16 @@ header span {
 }
 .skill p {
     margin-bottom: 3px;
-    color: #282828;
+    color: #1c1818;
 }
 .skill-progress {
     width: 100%;
-    background-color: #ddd;
+    background-color: #c5c3c0;
 }
 .skill-bar {
     width: 50%;
     height: 20px;
-    background-color: #01a093;
+    background-color: #807c79;
 }
 .skill-bar-photoshop {
     width: 70%;
@@ -284,10 +231,9 @@ header span {
 .label {
     text-align: center;
     line-height: 20px;
-    color: #ddd;
-} */
+    color: #dadada;
+} 
 /* образование */ 
-/*
 .education:after {
     content: '';
     display: table;
@@ -303,23 +249,18 @@ header span {
     float: left;
     margin-left: 1%;
 }
-.school h2 {
+.school h4, .languages h4 {
     margin-top: 10px;
-    font-size: 1em;
-    color: #282828;
+    font-size: 1.3em;
+    color: #1c1818;
 }
 .school p {
     margin-top: 10px;
-    color: #282828;
+    color: #1c1818;
 }
 .school span {
     color: #3d3d3d;
     font-size: 0.7em;
-}
-.languages h2 {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #282828;
 }
 .lang {
     display: inline-block;
@@ -329,21 +270,20 @@ header span {
     margin-right: 0;
 }
 .lang p {
-    color: #282828;
+    color: #1c1818;
     margin-top: 10px;
 }
 .lang span {
     color: #3d3d3d;
     font-size: 0.7em;
     margin-top: 5px;
-} */
+}
 /* footer */
-/*
 footer {
     width: 100%;
     margin: 10px 0;
     padding: 5px 0;
-    border-top: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid #1c1818;
 }
 footer::after {
     content: "";
@@ -355,7 +295,11 @@ footer p {
     display: inline-block;
 }
 footer p>a {
-    color: #01a093;
+    color: #1c1818;
+    text-decoration: none;
+}
+footer p>a:hover {
+    border-bottom: 1px dotted #1c1818;
 }
 .social {
     float: right;
@@ -367,10 +311,9 @@ footer p>a {
     text-align: center;
     line-height: 2;
     color: #fff;
-    background-color: #3d3d3d;
+    background-color: #1c1818;
     border-radius: 10%;
 }
 .social a:hover {
-    background-color: #01a093;
+    background-color: #aeaeae;
 }
-*/
