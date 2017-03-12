@@ -152,7 +152,7 @@ header span {
     color: #3d3d3d;
     margin-right: 10px;
 }
-.time span time {
+.time p span {
     font-size: 0.8em;
     line-height: 1.5;
 }
@@ -380,14 +380,44 @@ footer p>a:hover {
         clear: both;
     }
     .freelancer {
-        display: none;
+        display: block;
     }
+    /*
     .freelancer-480 {
         display: block;
+    } */
+    .place-and-time {
+        float: none;
+        width: 98%;
+        margin: 0 auto;
+    }
+    .place-and-time p span {
+        display: inline-block;
+    }
+    .skills-wrapper {
+        width: 98%;
+        margin: 0 1%;
+    }
+    .skills-wrapper:last-child {
+        margin: 0 1%;
+    }
+    .education .school {
+        width: 98%;
+        margin: 0 1%;
+    }
+    .education .languages {
+        width: 99%;
+        margin: 0 1%;
     }
     footer {
         width: 96%;
         margin: 0 auto;
+    }
+    footer p, footer .social {
+        width: 98%;
+        margin: 0 1%;
+        margin-bottom: 10px;
+        text-align: left;
     }
     
 }
