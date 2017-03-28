@@ -4,21 +4,22 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 100%;
     font-weight: 300;
     color: #070606;
     background-color: #fff;
 }
-header {
-    margin-bottom: 30px;
-}
 .wrapper {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
+}
+header {
+    margin-bottom: 1.875em;
 }
 /* .container */
 .content-container {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
     padding: 0;
     background-color: #fff;
 }
@@ -30,9 +31,9 @@ header {
 .divider {
     width: 25%;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
     padding: 0;
-    border-bottom: 50px solid #1c1818;
+    border-bottom: 3.125em solid #1c1818;
 }
 header h1 {
     margin: 0;
@@ -60,15 +61,15 @@ header span {
 .sidebar img {
     width: 100%;
     height: auto;
-    margin-bottom: -4px;;
+    margin-bottom: -0.25em;
 }
 .profile-wrapper {
     padding: 5% 10%;
     background-color: #1c1818;
 }
 .about-me, .contact-me {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #dadada;
+    margin-bottom: 1.875em;
+    border-bottom: 0.0625em solid #dadada;
     background-color: #1c1818;
 }
 .contact-me {
@@ -82,7 +83,7 @@ header span {
     margin-bottom: 30px;
 }
 .about-me p, .contact-list {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 .contact-list span {
     display: block;
@@ -90,17 +91,14 @@ header span {
     color: #aeaeae;
 }
 .contact-list li {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
 }
 .contact-list a {
     color: #dadada;
     text-decoration: none;
 }
 .contact-list a:hover {
-    border-bottom: 1px dotted #dadada;
-}
-.contact-list a i {
-    margin-right: 10px;
+    border-bottom: 0.0625em dotted #dadada;
 }
 
 /* секция с данными о работе */
@@ -112,22 +110,22 @@ header span {
     color: #1c1818;
 }
 .work-experience {
-    margin-bottom: 30px;
-    border-bottom: 1px solid #1c1818;
+    margin-bottom: 1.875em;
+    border-bottom: 0.0625em solid #1c1818;
 }
 .work-experience > h4 {
     font-size: 1.5em;
     color: #1c1818;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 .job {
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
     color: #3d3d3d;
 }
 .job:last-child {
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 .job::after {
     content: '';
@@ -139,7 +137,7 @@ header span {
     width: 25%;
     float: left;
     margin-right: 2%;
-    margin-top: 0px;
+    margin-top: 0;
 }
 .company h4 {
     font-size: 1em;
@@ -150,7 +148,7 @@ header span {
 }
 .time {
     color: #3d3d3d;
-    margin-right: 10px;
+    margin-right: 4.444444444%;
 }
 .time p span {
     font-size: 0.8em;
@@ -166,7 +164,7 @@ header span {
     color: #282828;
 }
 .position p {
-    margin-top: 5px;
+    margin-top: 0.3125em;
     font-size: 0.9em;
     color: #3d3d3d;
 }
@@ -189,7 +187,7 @@ header span {
 .proffesional-skills h4 {
     font-size: 1.5em;
     color: #1c1818;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
     text-transform: uppercase;
 }
 .professional-skills span {
@@ -201,14 +199,14 @@ header span {
     width: 49%;
 }
 .skill {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 .skills-wrapper:last-child {
     margin-left: 2%;
     margin-bottom: 0;
 }
 .skill p {
-    margin-bottom: 3px;
+    margin-bottom: 0.1875em;
     color: #1c1818;
 }
 .skill-progress {
@@ -217,7 +215,7 @@ header span {
 }
 .skill-bar {
     width: 50%;
-    height: 20px;
+    height: 1.25em;
     background-color: #807c79;
 }
 .skill-bar-photoshop {
@@ -240,7 +238,7 @@ header span {
 }
 .label {
     text-align: center;
-    line-height: 20px;
+    line-height: 1.25em;
     color: #dadada;
 } 
 /* образование */ 
@@ -260,12 +258,12 @@ header span {
     margin-left: 1%;
 }
 .school h4, .languages h4 {
-    margin-top: 10px;
+    margin-top: 0.625em;
     font-size: 1.3em;
     color: #1c1818;
 }
 .school p {
-    margin-top: 10px;
+    margin-top: 0.625em;
     color: #1c1818;
 }
 .school span {
@@ -281,19 +279,19 @@ header span {
 }
 .lang p {
     color: #1c1818;
-    margin-top: 10px;
+    margin-top: 0.625em;
 }
 .lang span {
     color: #3d3d3d;
     font-size: 0.7em;
-    margin-top: 5px;
+    margin-top: 0.3125em;
 }
 /* footer */
 footer {
     width: 100%;
-    margin: 10px 0;
-    padding: 5px 0;
-    border-top: 1px solid #1c1818;
+    margin: 0.625em 0;
+    padding: 0.3125em 0;
+    border-top: 0.0625em solid #1c1818;
 }
 footer::after {
     content: "";
@@ -311,7 +309,7 @@ footer p>a {
     text-decoration: none;
 }
 footer p>a:hover {
-    border-bottom: 1px dotted #1c1818;
+    border-bottom: 0.0625em dotted #1c1818;
 }
 .social {
     float: right;
@@ -346,7 +344,7 @@ footer p>a:hover {
         width: 96%;
         margin: 0 2%;
         clear: both;
-        border-top: 1px solid #1c1818;
+        border-top: 0.0625em solid #1c1818;
     }
     .main {
         float: none;
@@ -372,7 +370,7 @@ footer p>a:hover {
         width: 96%;
         margin: 0 2%;
         clear: both;
-        border-top: 1px solid #1c1818;
+        border-top: 0.0625em solid #1c1818;
     }
     .main {
         float: none;
@@ -416,7 +414,7 @@ footer p>a:hover {
     footer p, footer .social {
         width: 98%;
         margin: 0 1%;
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
         text-align: left;
     }
     
