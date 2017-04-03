@@ -1,0 +1,7 @@
+Host: http://www.mhalikov.ru
+
+User-agent: *
+Disallow: /i
+Disallow: /images
+
+Sitemap: http://mhalikov.ru/sitemap.xml
