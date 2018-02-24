@@ -9,7 +9,6 @@ body {
     font-weight: 300;
     color: #070606;
     background-color: #fff;
-    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/whitey.png');
 }
 .wrapper {
     max-width: 90%;
@@ -24,7 +23,6 @@ header {
     margin-bottom: 1.875em;
     padding: 0;
     background-color: #fff;
-    background: url('images/whitey.png');
 }
 .content-container::after {
     content: "";
@@ -70,7 +68,6 @@ header span {
 .profile-wrapper {
     padding: 5% 10%;
     background-color: #1c1818;
-    background: url('images/black-Linen.png');
 }
 .about-me, .contact-me {
     margin-bottom: 1.875em;
@@ -88,6 +85,13 @@ header span {
 }
 .about-me p, .contact-list {
     margin-bottom: 1.875em;
+}
+.contact-list {
+    list-style: none;
+}
+.contact-list .fa {
+    text-align: left;
+    color: #aeaeae;
 }
 .contact-list span {
     display: block;
@@ -111,7 +115,7 @@ header span {
     float: right;
     width: 76%;
     margin: 0 auto;
-    padding: 0 12px;
+    padding-left: 10px;
     color: #1c1818;
 }
 .work-experience {
@@ -132,19 +136,25 @@ header span {
     float: left;
     overflow: hidden;
     border: 1px solid #eee;
-    background: url('images/black-Linen.png');
 }
 .thumb_content {
     position: absolute;
     top: 0; left: 0;
     margin: 30px;
-    color: #eee;
+    color: #1c1818;
+}
+.thumb-content p {
+    padding-bottom: 10px;
 }
 .thumb_wrapper {
     position: absolute;
     top: 0; left: 0;
     width: 300px;
     height: 200px;
+    transition: 0.6s;
+}
+.thumb:hover .thumb_wrapper {
+    top: 100%;
 }
 .thumb_wrapper img {
     width: 300px;
